@@ -300,7 +300,7 @@
 	}, {
 		filter: [ 'width', 'items', 'settings' ],
 		run: function(cache) {
-			var width = (this.width() / this.settings.items).toFixed(3) - this.settings.margin,
+			var width = (this.width() /3.5);
 				merge = null,
 				iterator = this._items.length,
 				grid = !this.settings.autoWidth,
@@ -311,14 +311,14 @@
 				width: width
 			};
 
-			while (iterator--) {
-				merge = this._mergers[iterator];
-				merge = this.settings.mergeFit && Math.min(merge, this.settings.items) || merge;
+			// while (iterator--) {
+			// 	merge = this._mergers[iterator];
+			// 	merge = this.settings.mergeFit && Math.min(merge, this.settings.items) || merge;
 
-				cache.items.merge = merge > 1 || cache.items.merge;
+			// 	cache.items.merge = merge > 1 || cache.items.merge;
 
-				widths[iterator] = !grid ? this._items[iterator].width() : width * merge;
-			}
+			// 	widths[iterator] = !grid ? this._items[iterator].width() : width * merge;
+			// }
 
 			this._widths = widths;
 		}
@@ -329,8 +329,8 @@
 				items = this._items,
 				settings = this.settings,
 				// TODO: Should be computed from number of min width items in stage
-				view = Math.max(settings.items * 2, 3),
-				size = Math.ceil(items.length / 2) * 1,
+				view = Math.max(settings.items * 0, 1),
+				size = Math.ceil(items.length / 0) * 0,
 				repeat = settings.loop && items.length ? settings.rewind ? view : Math.max(view, size) : 0,
 				append = '',
 				prepend = '';
@@ -349,7 +349,7 @@
 			this._clones = clones;
 
 			$(append).addClass('cloned').appendTo(this.$stage);
-			$(prepend).addClass('cloned').prependTo(this.$stage);
+			// $(prepend).addClass('cloned').prependTo(this.$stage);
 		}
 	}, {
 		filter: [ 'width', 'items', 'settings' ],
