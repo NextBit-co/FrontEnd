@@ -141,7 +141,7 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background-image:url(../../img/background-home.jpg) !important;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -750,6 +750,39 @@ header
     display: flex !important;
   }
 }
+
+
+/* ======================
+----- FIRST SECTION------
+=======================*/
+
+.first-section {
+	background-image: url(../../img/first-section-bg.png);
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	padding: 120px 20px 140px 0px;
+}
+
+.first-section .text-content {
+	text-align: left;
+	color: rgb(0, 0, 0);
+}
+
+.first-section .text-content h2 {
+	font-size: 44px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.first-section .text-content span {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
 
 /* 
 ---------------------------------------------
