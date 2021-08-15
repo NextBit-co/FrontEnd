@@ -1168,3 +1168,42 @@ a.btn-startgames.macosx.lf {
 a.btn-startgames.macosx.lf:hover {
     background: linear-gradient(to right, #83d028, #a7e80d);
 }
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  fieldset{
+    background-color:cornflowerblue;
+    display: block;
+    width: 20%;
+    border: none;
+    color: black;
+    padding: 14px 28px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+.frame{
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-left: 120px;
+    padding: 20px; 
+    width: 400px;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+}
+.block{
+    display: flex;
+    justify-content: center;
+}
