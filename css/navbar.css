@@ -8,8 +8,17 @@ body{
 i {
 	margin-right: 10px;
 }
+.logo-img-navbar{
+	height: 64px;
+	width: 64px;
+	margin-top: -12px;
+	margin-right: 8px;
+}
 /*----------multi-level-accordian-menu------------*/
 .navbar-logo{
+	/*--add :value = logo-img-navbar--*/
+	height: 64px;
+	/*--------------*/
 	padding: 15px;
 	color: #fff;
 }
@@ -41,6 +50,7 @@ i {
     transition-duration:0.6s;
 	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     position: relative;
+	margin-top: 8px;
 }
 #navbarSupportedContent>ul>li.active>a{
 	color: #5161ce;
