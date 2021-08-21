@@ -760,8 +760,9 @@ header
 	background-image: url(../../img/first-section-bg.png);
 	background-size: cover;
 	width: 100%;
+  height: 800px;
 	background-repeat: no-repeat;
-	padding: 120px 20px 140px 0px;
+	
 }
 
 .first-section .text-content {
@@ -1110,12 +1111,22 @@ About
 }
 
 .about-us .left-image {
-  margin-right: 30px;
+  margin-right: 40px;
 }
+.about-us .left-image img{
+  margin-top: 5px;
+  position: absolute;
+  width: 590px;
+  height: 390px;
+  top: 135px;
+  left: 13px;
+}
+
+
 
 .about-us .section-heading h2 {
   margin-right: 0px;
-  margin-top: 50px;
+  margin-top: 125px;
 }
 
 .about-us .section-heading p {
@@ -1300,7 +1311,7 @@ Portfolio
   opacity: 0.5;
 }
 
-.owl-portfolio .owl-dots {
+/* .owl-portfolio .owl-dots {
   text-align: center;
   margin-top: 40px;
 }
@@ -1317,7 +1328,7 @@ Portfolio
   opacity: 1;
   width: 10px;
   height: 10px;
-}
+} */
 
 /* 
 ---------------------------------------------
