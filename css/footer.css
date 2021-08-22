@@ -2,12 +2,12 @@
    url:(https://codepen.io/z-)
 */
 body {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "main" "footer";
+    /*display: grid;*/
+    /*grid-template-rows: 1fr auto;*/
+    /*grid-template-areas: "main" "footer";*/
     overflow-x: hidden;
-    background: #F5F7FA;
-    min-height: 100vh;
+    /*background: #F5F7FA;*/
+    /*min-height: 100vh;*/
 }
 body .footer {
     z-index: 1;
