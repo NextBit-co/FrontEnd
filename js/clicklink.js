@@ -8,4 +8,7 @@ function clickabout () {
 function clicklogin (){
     location.href = "login.html";
 }
+function clickloginanyfolder (){
+    location.href = "../login.html"
+}
 /*----------------------*/
