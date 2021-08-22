@@ -125,7 +125,7 @@ a.btn-startgames:hover {
       align-items: center;
     }
 	span.img-ste1 {
-    background: url(/icons/img-ste1.png) no-repeat;
+    background: url(/img/portfolio-01.png) no-repeat;
     display: block;
     width: 560px;
     height: 420px;
@@ -213,7 +213,7 @@ a.block-s1.p2 {
     background: url(/img/block-2s.png) no-repeat;
 }
 img.poster {
-    float: left;
+    text-align: center;
     width: 30%;
 }
 
@@ -224,7 +224,7 @@ img.poster {
     padding: 25px 10px;
     border-radius: 6px;
     display: table;
-    margin-bottom: 45px;
+    margin-bottom: 5%;
 }
 
 span.hot-news {
@@ -249,7 +249,7 @@ a.btn-view {
     border-bottom: 5px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0px 10px 65px 0px #ccd4e0;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 24px;
     font-weight: 600;
     display: block;
     line-height: 42px;
@@ -1340,4 +1340,42 @@ a.btn-startgames.macosx.lf:hover {
     height: 100%;
   }
   * {box-sizing: border-box;}
-
+.description{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-align: left;
+}
+.news-log{
+    margin-top: 1%;
+    margin-bottom: 0px;
+}
+.articleimg {
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+    margin-bottom: 5%;
+	
+}
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 24px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Itim', cursive;
+  }
+  
+  .container.btn:hover {
+    background-color: black;
+  }
+  
