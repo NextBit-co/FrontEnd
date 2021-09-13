@@ -1,0 +1,14 @@
+/*** Mixins & Default Styles ***/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+body{
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+i {
+    margin-right: 10px;
+}
