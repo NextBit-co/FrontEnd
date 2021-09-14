@@ -55,3 +55,15 @@ jQuery(document).ready(function($){
 	// Add active class to target link
 	target.parent().addClass('active');
 });
+
+// --------------add navbar scroll move (navbar - follow)--------
+window.onscroll = function() {navbarfollow()};
+function navbarfollow() {
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	} else {
+		navbar.classList.remove("sticky");
+	}
+}
