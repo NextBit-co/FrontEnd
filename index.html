@@ -14,6 +14,15 @@
     <!-- css footer -->
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="./css/footer.css">
+    <!-- css slide -->
+    <link rel="stylesheet" href="./css/slide.css">
+    <!-- css profile character -->
+    <link rel="stylesheet" href="./css/profile_character/templatemo-onix-digital.css">
+    <link rel="stylesheet" href="./css/profile_character/owl.css">
+    <link rel="stylesheet" href="./css/profile_character/animated.css">
+    <link rel="stylesheet" href="./css/profile_character/fontawesome.css">
+    <!-- css slime button -->
+    <link rel="stylesheet" href="./css/button_slime.css">
 </head>
 <body>
     <!-- Start Navbar -->
@@ -47,10 +56,51 @@
     </header>
     <!-- End Navbar -->
 
-
     <!-- Start Container -->
     <div class="container">
-        <section id="banner-section"style="height: 900px;background-color: lightskyblue"></section>
+        <section id="banner-section" class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1>- ยินดีต้อนรับสู่ <span>Nextbit</span> -</h1>
+                        <p>
+                            &emsp;แหล่งการเรียนรู้ที่จะทำให้น้อง ๆ ได้เรียนรู้จากการเขียน Code โปรแกรมด้วยการลากบล็อกคำสั่ง
+                            เพื่อให้ตัวละครของเราหรือสิ่งของที่น้องๆ เลือกนั้น มีการขยับหรือเคลื่อนไหวไปตามที่เราต้องการ
+                        </p>
+                        <div class="slime">
+                            <div class="row">
+                                <div class="wrapper">
+                                    <button><a href="#">
+                                        <div class="scale rotate-4">ค</div>
+                                        <div class="scale rotate-2">อ</div>
+                                        <div class="scale rotate-3">ร์</div>
+                                        <div class="scale rotate-1">ส</div>
+                                        <div class="scale rotate-2">เ</div>
+                                        <div class="scale rotate-4">รี</div>
+                                        <div class="scale rotate-1">ย</div>
+                                        <div class="scale rotate-2">น</div>
+                                    </a></button>
+                                </div>
+                                <div class="wrapper">
+                                    <button><a href="#">
+                                        <div class="scale rotate-4">บ</div>
+                                        <div class="scale rotate-2">ท</div>
+                                        <div class="scale rotate-3">ค</div>
+                                        <div class="scale rotate-1">ว</div>
+                                        <div class="scale rotate-2">า</div>
+                                        <div class="scale rotate-4">ม</div>
+                                    </a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="./imgs/banner2.png">
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <section id="objective-section" class="objective">
             <div class="row">
             <div class="col-lg-6 align-self-center">
@@ -65,6 +115,7 @@
                 <div class="right-explain">
                     <div class="list_jigsaw">
                         <h1>สิ่งที่น้องๆ<span> จะได้รับ</span></h1>
+                        <br>
                         <ul>
                             <li>เรียนรู้การแก้ปัญหา</li>
                             <li>เรียนรู้การคิดเป็นลำดับ ขั้นตอน และเป็นเหตุผล</li>
@@ -77,8 +128,148 @@
             </div>
             </div>
         </section>
-        <section id="review"></section>
-        <section id="character"></section>
+        <section id="review_section" class="review">
+            <h1 style="padding: 24px;margin-left: 24px"><span>รีวิว</span>จากผู้ใช้งาน</h1>
+            <div class="slider">
+                <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+                <div class="slider__inner">
+                    <div class="slider__contents">
+<!--                        <div class="row">-->
+<!--                        <div class="col-lg-4">-->
+                        <img src="./imgs/customer1.png">
+                        <h2 class="slider__caption">- Woz -</h2>
+                        <p class="slider__txt">เนื้อหาการสอนสนุก ไม่น่าเบื่อ สอนเป็นขั้นตอน ลงคอร์สนี้คุ้มมากๆเลย</p>
+                    </div>
+<!--                        <div class="col-lg-4">-->
+<!--                            <img src="./imgs/logo_dino.png">-->
+<!--                            <h2 class="slider__caption">codepen</h2>-->
+<!--                            <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-4">-->
+<!--                            <img src="./imgs/logo_dino.png">-->
+<!--                            <h2 class="slider__caption">codepen</h2>-->
+<!--                            <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>-->
+<!--                        </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <div class="slider__contents">
+                        <img src="./imgs/customer2.png">
+                        <h2 class="slider__caption">- Gracie -</h2>
+                        <p class="slider__txt">ศึกษามาหลายคอร์สหลายที่แต่ก็เข้าใจยากมากๆ เรียนเสร็จพอมาลองทำ ก็ทำไม่ได้ แต่พอมาลงคอร์สจากที่นี่ สอนเข้าใจง่าย มีแบบฝึกหัดให้ทำ คือต้องทำได้จริง ค่าเรียนก็ไม่แพง คุ้มเกินราคา</p>
+                    </div>
+                    <div class="slider__contents">
+                        <img src="./imgs/customer3.png">
+                        <h2 class="slider__caption">- Sarge -</h2>
+                        <p class="slider__txt">ตัวละครน่ารักมาก สอนเข้าใจง่าย น้องๆที่ได้เรียนรู้สึกกล้าแสดงออกมากขึ้นเยอะเลย แนะนำค่ะ อยากให้มีคอร์สแบบนี้อีกหลายๆคอร์สเลย</p>
+                    </div>
+                    <div class="slider__contents">
+                        <img src="./imgs/customer4.png">
+                        <h2 class="slider__caption">- Val -</h2>
+                        <p class="slider__txt">ตอนแรกน้องไม่มีพื้นฐานเลย พอได้มาเรียน มีการ์ตูนให้ดู น้องดูสนุกไปกับการเรียน ค่าคอร์สก็คุ้มราคา</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="character_section" class="character">
+            <div id="portfolio" class="our-portfolio section">
+                <!-- <div class="portfolio-left-dec">
+                     <img src="./img/portfolio-01.jpg" alt="">
+                   </div> -->
+                <div class="container">
+                    <h1 align="center" style="padding: 36px;">แนะนำ<span>ตัวละคร</span></h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="owl-carousel owl-portfolio">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="./imgs/portfolio-01.png" alt="">
+                                        <div class="hover-effect">
+                                            <div class="inner-content">
+                                                <a rel="sponsored" href="#" target="_parent">
+                                                    <h4>TODY</h4>
+                                                </a>
+                                                <span>คอยาว ทีเร็ก ใสซื่อ ทึ่มๆ <br>มีพลังแฝง รักการเรียนรู้ <br>แต่ยังไม่ค่อยรู้ <br>ชอบลองผิดลองถูก</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="./imgs/portfolio-02.png" alt="">
+                                        <div class="hover-effect">
+                                            <div class="inner-content">
+                                                <a href="#">
+                                                    <h4>TEENA</h4>
+                                                </a>
+                                                <span>พันธุ์หนาม น่ารัก เป็นมิตร <br>อ่อนโยน ชอบให้กำลังใจ <br>เป็นผู้ตามที่ดี</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="./imgs/portfolio-03.png" alt="">
+                                        <div class="hover-effect">
+                                            <div class="inner-content">
+                                                <a rel="sponsored" href="#" target="_parent">
+                                                    <h4>PEEMO</h4>
+                                                </a>
+                                                <span>ทีเร็ก ดูเพอร์เฟก กวนๆหน่อย <br>รู้ทุกเรื่อง แต่จะ รู้มั่วๆ หน่อย</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="./imgs/portfolio-04.png" alt="">
+                                        <div class="hover-effect">
+                                            <div class="inner-content">
+                                                <a rel="sponsored" href="#" target="_parent">
+                                                    <h4>CAT</h4>
+                                                </a>
+                                                <span>สัตว์เลี้ยงของ TODY</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="./imgs/portfolio-05.png" alt="">
+                                        <div class="hover-effect">
+                                            <div class="inner-content">
+                                                <a rel="sponsored" href="#" target="_parent">
+                                                    <h4>TAC</h4>
+                                                </a>
+                                                <span>สัตว์เลี้ยงของ TEENA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="./imgs/portfolio-06.png" alt="">
+                                        <div class="hover-effect">
+                                            <div class="inner-content">
+                                                <a rel="sponsored" href="#" target="_parent">
+                                                    <h4>TIC</h4>
+                                                </a>
+                                                <span>สัตว์เลี้ยงของ PEEMO</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <!-- End Container -->
 
@@ -137,6 +328,13 @@
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
     <script src='./js/navbar.js'></script>
+
+    <!-- Profile_character -->
+    <script src="./js/profile_character/animation.js"></script>
+    <script src="./js/profile_character/owl-carousel.js"></script>
+    <script src="./js/profile_character/custom.js"></script>
+    <script src="./js/profile_character/imagesloaded.js"></script>
+    <script src="./js/profile_character/owl-carousel.js"></script>
     <!-- End Script -->
 </body>
 </html>
