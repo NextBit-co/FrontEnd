@@ -6,9 +6,8 @@
 
 .cards {
     justify-content: center;
-    align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 419px));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 338px));
     gap: 2rem;
     margin: 4rem 5vw;
     padding: 0;
@@ -17,6 +16,7 @@
 
 .card {
     position: relative;
+    justify-content: center;
     display: block;
     height: 100%;
     border-radius: calc(var(--curve) * 1px);
@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
     gap: 2em;
-    padding: 2em;
+    padding: 0.3em;
     border-radius: calc(var(--curve) * 1px) 0 0 0;
     background-color: var(--surface-color);
     transform: translateY(-100%);
@@ -79,6 +79,7 @@
     flex-shrink: 0;
     width: 50px;
     height: 50px;
+    margin-left: 20px;
     border-radius: 50%;
 }
 
