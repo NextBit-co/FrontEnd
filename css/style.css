@@ -130,3 +130,198 @@ span {
     background-size: contain;
     background-image: url("../imgs/icons/icon_jigsaw.png");
 }
+.picture{
+    width: 100%;
+}
+.container2 {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 5% 0%;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+
+.box > img {
+    width: 100%;
+    height: calc(70% - 10vh);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box > span {
+    font-size: 3.8vh;
+    color: black;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 20%; }
+.box:hover > img {
+    width: 100%;
+    height: 100%;
+}
+.blocknextbit{
+    display: flex;
+    width: 80%;
+    margin: 5% 10% ;
+    justify-content: right;
+}
+.blockleft{
+    display: flex;
+    width: 80%;
+    margin: 5%;
+    justify-content: left;
+}
+.blockright{
+    display: flex;
+    width: 80%;
+    margin: 5% 10% ;
+    justify-content: right;
+}
+.frame{
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 40px;
+    margin: 3%;
+    width: fit-content;
+    height: 5%;
+    color: black;
+    font-size: 20px;
+    font-family: 'Mali', cursive;
+    text-align: center;
+}
+.blocknextbit img{
+    height: 200px;
+    margin-top: 5%;
+}
+.blockleft > img{
+    height: 200px;
+    margin: 3%;
+}
+.blockright  img{
+    height: 200px;
+    margin-top: 20%;
+}
+.articleimg {
+    width: 100%;
+    margin-top: 12%;
+}
+.btn {
+    text-align: center;
+    min-width:220px;;
+    font-weight: 600;
+    letter-spacing:1px;
+}
+.container .btn {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #555;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Mali', cursive;
+
+}
+.container .btn a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Mali', cursive;
+}
+.all-article {
+    margin: 5% 0;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.all-article > h1, .article {
+    margin: 10px;
+    padding: 20px;
+}
+
+.article {
+    display: block;
+    background: white;
+}
+
+.article > img {
+    float: left;
+    margin: 32px 24px 24px 0;
+    padding: 3.2px 0 0;
+    max-width: 30%;
+    height: auto;
+}
+.message{
+    display: block;
+    font-family: 'Mali', cursive;
+}
+.message > p, a{
+    margin: 8px;
+    font-size: 24px;
+}
+.message > h2{
+    margin: 8px;
+    font-size: 36px;
+}
+@media(max-width: 992px) {
+
+    .picture{
+        width: 100%;
+    }
+    .blocknextbit{
+        display: flex;
+        width: 80%;
+        margin: 16% 12% 4%;
+        justify-content: right;
+    }
+    .blockleft{
+        display: flex;
+        width: 80%;
+        margin: 2%;
+        justify-content: left;
+    }
+    .blockright{
+        display: flex;
+        width: 80%;
+        margin: 4% 16%;
+        justify-content: right;
+    }
+    .frame{
+        display: inline-block;
+        border-radius: 25px;
+        border: 2px solid black;
+        padding: 10px;
+        width: fit-content;
+        height: 5%;
+        color: black;
+        font-size: 16px;
+        font-family: 'Mali', cursive;
+        text-align: center;
+    }
+    .blocknextbit img{
+        height: 100px;
+        margin: 2%;
+    }
+    .blockleft > img{
+        height: 100px;
+        margin: 2%;
+    }
+    .blockright  img{
+        height: 100px;
+        margin: 2%;
+    }
+
+}
