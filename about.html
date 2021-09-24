@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Start Navbar -->
+<!-- Start Navbar -->
+<header>
     <nav class="navbar navbar-expand-custom navbar-mainbg" id="navbar">
         <a class="navbar-brand navbar-logo" href="#">
             <img src="./imgs/logo_dino.png">
@@ -30,25 +31,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html"><i class="fas fa-home"></i>หน้าหลัก</a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-home"></i>หน้าหลัก</a>
+                    <a class="nav-link" href="./about.html"><i class="fa fa-users"></i>เกี่ยวกับพวกเรา</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-users"></i>เกี่ยวกับพวกเรา</a>
+                    <a class="nav-link" href="./course.html"><i class="fa fa-graduation-cap"></i>คอร์สเรียน</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-graduation-cap"></i>คอร์สเรียน</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-cubes"></i>บทความ</a>
+                    <a class="nav-link" href="./article.html"><i class="fa fa-cubes"></i>บทความ</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- End Navbar -->
+</header>
+<!-- End Navbar -->
     <!--start about-->
     <div  class="container">
-        <div class="container2">
+        <div class="characterabout">
             <div class="box">
             <img src="./imgs/TODY.png">
             <span>TODY</span>
@@ -74,47 +76,50 @@
             <span>TIC</span>
             </div>
         </div>
-        <div class="blocknextbit">
-            <span class="frame">
-                <p><b>สวัสดีครับนี่คือทีมงานของเรา</p>
-            </span>
-            <img src="imgs/logo_dino.png">
-        </div>
-        <div class="blockleft">
-            <img src="imgs/t1.png">
-            <span class="frame">
-                <p><b>Earn Surichay - Founder</p><p>“เริ่มต้นจากอะไรง่าย ๆ เช่น 1+1 = 2”</p>
-            </span>
-        </div>
-        <div class="blockright">
-            <span class="frame">
-                <p><b>Chuleeporn Suwattanaphiboon - Content Creator, Voice</p><p>“เรียบง่ายแต่ซับซ้อน”</p>
-            </span>
-            <img src="imgs/t2.png">
-        </div>
-        <div class="blockleft">
-            <img src="imgs/t3.png">
-            <span class="frame">
-                <p><b>Cheyphat Tharakulprateep - Instructor , Content Creator</p><p>“ถ้าการเรียนมันซีเรียส ให้คลายเครียดด้วยการกิน”</p>
-            </span>
-        </div>
-        <div class="blockright">
-            <span class="frame">
-                <p><b>Yada Ngamposri - Curriculum Creator , Voice , Instructor</p><p>“ทางออกของปัญหามีมากกว่า 1 ทางเสมอ”</p>
-            </span>
-            <img src="imgs/t4.png">
-        </div>
-        <div class="blockleft">
-            <img src="imgs/t5.png">
-            <span class="frame">
-                <p><b>Pornsupa Jiamton - Production Proof</p><p>“จินตนาการสร้างฝัน มือเราเท่านั้นสร้างมันให้เป็นจริง” </p>
-            </span>
-        </div>
-        <div class="blockright">
-            <span class="frame">
-                <p><b>Wanatchaporn Churvivat - Graphic Designer and Editor</p><p>“จงพูดความจริง ทำงานให้หนัก และรับประทานอาหารเย็นให้ตรงเวลา”</p>
-            </span>
-            <img src="imgs/t6.png">
+        <div class="introduceline">
+            <img src="./imgs/wallline_1.png">
+            <div class="blocknextbit">
+                <span class="frame">
+                    <p><b>สวัสดีครับนี่คือทีมงานของเรา</p>
+                </span>
+                <img src="imgs/logo_dino.png">
+            </div>
+            <div class="blockt1">
+                <img src="imgs/t1.png">
+                <span class="frame">
+                    <p><b>Earn Surichay - Founder</p><p>“เริ่มต้นจากอะไรง่าย ๆ เช่น 1+1 = 2”</p>
+                </span>
+            </div>
+            <div class="blockt2">
+                <span class="frame">
+                    <p><b>Chuleeporn Suwattanaphiboon - Content Creator, Voice</p><p>“เรียบง่ายแต่ซับซ้อน”</p>
+                </span>
+                <img src="imgs/t2.png">
+            </div>
+            <div class="blockt3">
+                <img src="imgs/t3.png">
+                <span class="frame">
+                    <p><b>Cheyphat Tharakulprateep - Instructor , Content Creator</p><p>“ถ้าการเรียนมันซีเรียส ให้คลายเครียดด้วยการกิน”</p>
+                </span>
+            </div>
+            <div class="blockt4">
+                <span class="frame">
+                    <p><b>Yada Ngamposri - Curriculum Creator , Voice , Instructor</p><p>“ทางออกของปัญหามีมากกว่า 1 ทางเสมอ”</p>
+                </span>
+                <img src="imgs/t4.png">
+            </div>
+            <div class="blockt5">
+                <img src="imgs/t5.png">
+                <span class="frame">
+                    <p><b>Pornsupa Jiamton - Production Proof</p><p>“จินตนาการสร้างฝัน มือเราเท่านั้นสร้างมันให้เป็นจริง” </p>
+                </span>
+            </div>
+            <div class="blockt6">
+                <span class="frame">
+                    <p><b>Wanatchaporn Churvivat - Graphic Designer and Editor</p><p>“จงพูดความจริง ทำงานให้หนัก และรับประทานอาหารเย็นให้ตรงเวลา”</p>
+                </span>
+                <img src="imgs/t6.png">
+            </div>
         </div>
         <img class="picture" src="./imgs/bg-about.png">
         
@@ -127,10 +132,10 @@
         <div class="footer-left">
             <h1><img src="./imgs/logo_dino.png"> <span>Next</span>bit</h1>
             <p class="footer-links">
-                <a href="#" class="link-1">หน้าหลัก</a>
-                <a href="#">เกี่ยวกับพวกเรา</a>
-                <a href="#">คอร์สเรียน</a>
-                <a href="#">บทความ</a>
+                <a href="./index.html" class="link-1">หน้าหลัก</a>
+                <a href="./about.html">เกี่ยวกับพวกเรา</a>
+                <a href="./course.html">คอร์สเรียน</a>
+                <a href="./article.html">บทความ</a>
             </p>
             <p class="footer-company-name">Nextbit.co © 2021</p>
         </div>

@@ -3,210 +3,14 @@
 body{
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
 }
 i {
     margin-right: 10px;
-}
-.picture{
-    width: 100%;
-}
-.container2 {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    height: 100vh;
-    margin: 5% 0%;
-  }
-
-  .box {
-    flex: 1;
-    overflow: hidden;
-    transition: .5s;
-    margin: 0 2%;
-    box-shadow: 0 20px 30px rgba(0,0,0,.1);
-    line-height: 0;
-  }
-
-  .box > img {
-    width: 100%;
-    height: calc(70% - 10vh);
-    object-fit: cover; 
-    transition: .5s;
-  }
-
-  .box > span {
-    font-size: 3.8vh;
-    color: black;
-    display: block;
-    text-align: center;
-    height: 10vh;
-    line-height: 2.6;
-  }
-
-  .box:hover { flex: 1 1 20%; }
-  .box:hover > img {
-    width: 100%;
-    height: 100%;
-  }
-.blocknextbit{
-    display: flex;
-    width: 80%;
-    margin: 5% 10% ;
-    justify-content: right;
-}
-.blockleft{
-    display: flex;
-    width: 80%;
-    margin: 5%;
-    justify-content: left;
-}
-.blockright{
-    display: flex;
-    width: 80%;
-    margin: 5% 10% ;
-    justify-content: right;
-}
-.frame{
-    border-radius: 25px;
-    border: 2px solid black;
-    padding: 40px;
-    margin: 3%;
-    width: fit-content;
-    height: 5%;
-    color: black;
-    font-size: 20px;
-    font-family: 'Mali', cursive;
-    text-align: center;
-}
-.blocknextbit img{
-    height: 200px;
-    margin-top: 5%;
-}
-.blockleft > img{
-    height: 200px;
-    margin: 3%;
-}
-.blockright  img{
-    height: 200px;
-    margin-top: 20%;
-}
-.articleimg {
-    width: 100%;
-    margin-top: 12%;
-}
-.btn {
-    text-align: center;
-    min-width:220px;;
-    font-weight: 600;
-    letter-spacing:1px;
-}
-.container .btn {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #555;
-    font-size: 20px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Mali', cursive;
-    
-  }
-  .container .btn a{
-    color: white;
-    text-decoration: none;
-    font-family: 'Mali', cursive;
-}
-.all-article {
-    margin: 5% 0;
-    padding: 5px;
-    background-color: lightgray;
-  }
-  
-  .all-article > h1, .article {
-    margin: 10px;
-    padding: 20px;
-  }
-  
-  .article {
-    display: block;
-    background: white;
-  }
-  
-  .article > img {
-    float: left;
-    margin: 32px 24px 24px 0;
-    padding: 3.2px 0 0;
-    max-width: 30%;
-    height: auto;
-  }
-  .message{
-    display: block;
-    font-family: 'Mali', cursive;
-  }
-  .message > p, a{
-    margin: 8px;
-    font-size: 24px;
-  }
-  .message > h2{
-    margin: 8px;
-    font-size: 36px;
-  }
-@media(max-width: 992px) {
-
-    .picture{
-        width: 100%;
-    }
-    .blocknextbit{
-        display: flex;
-        width: 80%;
-        margin: 16% 12% 4%;
-        justify-content: right;
-    }
-    .blockleft{
-        display: flex;
-        width: 80%;
-        margin: 2%;
-        justify-content: left;
-    }
-    .blockright{
-        display: flex;
-        width: 80%;
-        margin: 4% 16%;
-        justify-content: right;
-    }
-    .frame{
-        display: inline-block;
-        border-radius: 25px;
-        border: 2px solid black;
-        padding: 10px;
-        width: fit-content;
-        height: 5%;
-        color: black;
-        font-size: 16px;
-        font-family: 'Mali', cursive;
-        text-align: center;
-    }
-    .blocknextbit img{
-        height: 100px;
-        margin: 2%;
-    }
-    .blockleft > img{
-        height: 100px;
-        margin: 2%;
-    }
-    .blockright  img{
-        height: 100px;
-        margin: 2%;
-    }
-
 }
 h1 {
     font-family: 'Kanit', sans-serif;
@@ -221,6 +25,11 @@ span {
 
 .container {
     /*background-color: #b1beff;*/
+    /*article*/
+    position: relative;
+    width: 100%;
+     max-width: 400px;
+     /*article*/
 }
 .banner {
     min-height: 600px;
@@ -325,4 +134,715 @@ span {
     width: 30px;
     background-size: contain;
     background-image: url("../imgs/icons/icon_jigsaw.png");
+}
+/*start about*/
+.picture{
+    width: 100%;
+    margin-top: 5%;
+}
+.characterabout {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 8% 0%;
+}
+.introduceline {
+    position: relative;
+}
+.introduceline > img{
+    width: 100%;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin:2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    height: fit-content;
+}
+
+.box > img {
+    width: 100%;
+    height: calc(70% - 10vh);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box > span {
+    font-size: 3.8vh;
+    color: black;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+/*.box:hover { flex: 1 1 10%; }
+.box:hover > img {
+    width: 100%;
+    height: 100%;
+}*/
+.blocknextbit{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 16%;
+    width: 80%;
+    justify-content: right;
+}
+.blocknextbit img{
+    height: 200px;
+    margin-top: 5%;
+}
+.blockt1{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    right: 18%;
+    width: 80%;
+    justify-content: left;
+}
+.blockt1 > img{
+    height: 200px;
+    margin: 3%;
+}
+.blockt2{
+    display: flex;
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    width: 80%;
+    justify-content: right;
+}
+.blockt2  img{
+    height: 200px;
+    margin-top: 20%;
+}
+.blockt3{
+    display: flex;
+    position: absolute;
+    top: 45%;
+    right: 18%;
+    width: 80%;
+    justify-content: left;
+}
+.blockt3 > img{
+    height: 200px;
+    margin: 3%;
+}
+.blockt4{
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    width: 80%;
+    margin: 5% 10% ;
+    justify-content: right;
+}
+.blockt4  img{
+    height: 200px;
+    margin-top: 20%;
+}
+.blockt5{
+    display: flex;
+    position: absolute;
+    top: 70%;
+    right: 18%;
+    width: 80%;
+    justify-content: left;
+}
+.blockt5 > img{
+    height: 200px;
+    margin: 3%;
+}
+.blockt6{
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    width: 80%;
+    margin: 5% 10% ;
+    justify-content: right;
+}
+.blockt6  img{
+    height: 200px;
+    margin-top: 20%;
+}
+.frame{
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 40px;
+    margin: 3%;
+    width: fit-content;
+    height: 5%;
+    color: black;
+    font-size: 20px;
+    font-family: 'Mali', cursive;
+    text-align: center;
+}
+/*end about*/
+/*start article*/
+.articleimg {
+    width: 100%;
+    margin-top: 10%;
+} 
+  .container .btn {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    
+  }
+  .btna{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Mali', cursive;
+  }
+  .btna:hover{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Mali', cursive;
+  }
+  .container .btn:hover {
+    background-color: black;
+  }
+.all-article {
+    margin: 5% 0;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.all-article > h1, .article {
+    margin: 10px;
+    padding: 20px;
+}
+
+.article {
+    display: block;
+    background: white;
+}
+
+.article > img {
+    float: left;
+    margin: 32px 24px 24px 0;
+    padding: 3.2px 0 0;
+    max-width: 30%;
+    height: auto;
+}
+.message{
+    display: block;
+    font-family: 'Mali', cursive;
+}
+.message > p, a{
+    margin: 8px;
+    font-size: 24px;
+    font-family: 'Mali', cursive;
+}
+.message > h2{
+    margin: 8px;
+    font-size: 36px;
+}
+/*end article*/
+/*start sub-article*/
+.subsection{
+    background-color: lightgrey;
+    margin-top: 5%;
+    padding: 3%;
+    
+}
+.subsection h2{
+    font-family: 'Kanit', sans-serif;
+    color: #9433f0;
+}
+#banner-section p, h4{
+    font-family: 'Mali', cursive;
+    color: black;
+    font-size: 24px;
+}
+.col-lg-6 img{
+    width: 100%;
+}
+.imgsub{
+    width: 50%;
+    text-align: center;
+    margin: auto auto;
+}
+/*end sub-article*/
+@media(max-width: 992px) {
+    /*start about*/
+    .picture{
+        width: 100%;
+    }
+    .characterabout {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 24% 0% 10%;
+    }
+    .introduceline {
+        position: relative;
+    }
+    .introduceline > img{
+        width: 100%;
+        height: 1080px;
+    }
+    .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin:2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
+        height: fit-content;
+    }
+    
+    .box > img {
+        width: 100%;
+        height: calc(70% - 10vh);
+        object-fit: cover;
+        transition: .5s;
+    }
+    
+    .box > span {
+        font-size: 16px;
+        color: black;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+    }
+    
+    /*.box:hover { flex: 1 1 10%; }
+    .box:hover > img {
+        width: 100%;
+        height: 100%;
+    }*/
+    .blocknextbit{
+        display: flex;
+        position: absolute;
+        top: 9%;
+        left: 18%;
+        width: 80%;
+        justify-content: right;
+    }
+    .blocknextbit img{
+        height: 80px;
+        margin-top: 5%;
+    }
+    .blockt1{
+        display: flex;
+        position: absolute;
+        top: 15%;
+        right: 18%;
+        width: 80%;
+        justify-content: left;
+    }
+    .blockt1 > img{
+        height: 80px;
+        margin: 3%;
+    }
+    .blockt2{
+        display: flex;
+        position: absolute;
+        top: 24%;
+        left: 8%;
+        width: 80%;
+        margin: 5% 10% ;
+        justify-content: right;
+    }
+    .blockt2  img{
+        height: 80px;
+        margin-top: 20%;
+    }
+    .blockt3{
+        display: flex;
+        position: absolute;
+        top: 37%;
+        right: 18%;
+        width: 80%;
+        justify-content: left;
+    }
+    .blockt3 > img{
+        height: 80px;
+        margin: 3%;
+    }
+    .blockt4{
+        display: flex;
+        position: absolute;
+        top: 49%;
+        left: 8%;
+        width: 80%;
+        margin: 5% 10% ;
+        justify-content: right;
+    }
+    .blockt4  img{
+        height: 80px;
+        margin-top: 20%;
+    }
+    .blockt5{
+        display: flex;
+        position: absolute;
+        top: 63.5%;
+        right: 18%;
+        width: 80%;
+        justify-content: left;
+    }
+    .blockt5 > img{
+        height: 80px;
+        margin: 3%;
+    }
+    .blockt6{
+        display: flex;
+        position: absolute;
+        top: 75%;
+        left: 8%;
+        width: 80%;
+        margin: 5% 10% ;
+        justify-content: right;
+    }
+    .blockt6  img{
+        height: 80px;
+        margin-top: 20%;
+    }
+    .frame{
+        display: inline-block;
+        border-radius: 25px;
+        border: 2px solid black;
+        padding: 8px;
+        width: fit-content;
+        height: 5%;
+        color: black;
+        font-size: 12px;
+        font-family: 'Mali', cursive;
+        text-align: center;
+    }
+    /*end about*/  
+    /*start article*/
+    .articleimg {
+        width: 100%;
+        margin-top: 15%;
+    } 
+      .container .btn {
+        position: absolute;
+        top: 70%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        padding: 2px 4px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        width: 25%;
+        height: 15%;
+      }
+      .btna{
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Mali', cursive;
+      }
+      .btna:hover{
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Mali', cursive;
+      }
+      .container .btn:hover {
+        background-color: black;
+      }
+    .all-article {
+        margin: 5% 0;
+        padding: 5px;
+        background-color: lightgray;
+    }
+    
+    .all-article > h1, .article {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .article {
+        display: block;
+        background: white;
+    }
+    
+    .article > img {
+        float: none;
+        margin: 5% 0% 5% 20%;
+        max-width: 60%;
+        height: auto;
+    }
+    .message{
+        display: block;
+        font-family: 'Mali', cursive;
+    }
+    .message > p, a{
+        margin: 8px;
+        font-size: 16px;
+        font-family: 'Mali', cursive;
+    }
+    .message > h2{
+        margin: 8px;
+        font-size: 24px;
+    }
+    /*end article*/
+    /*start sub-article*/
+    .subsection{
+        background-color: lightgrey;
+        margin-top: 5%;
+        padding: 3%;
+        
+    }
+    .subsection h2{
+        font-family: 'Kanit', sans-serif;
+        color: #9433f0;
+    }
+    #banner-section p, h4{
+        font-family: 'Mali', cursive;
+        color: black;
+        font-size: 24px;
+    }
+    .col-lg-6 img{
+        width: 80%;
+    }
+    .imgsub{
+        width: 50%;
+        margin: auto auto;
+    }
+    /*end sub-article*/
+}
+@media(max-height: 768px) {
+    /*start about*/
+    .picture{
+        width: 100%;
+    }
+    .characterabout {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 24% 0% 10%;
+    }
+    .introduceline {
+        position: relative;
+    }
+    .container .introduceline > img{
+        width: 100%;
+        height: 1080px;
+    }
+    .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin:2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
+        height: fit-content;
+    }
+    
+    .box > img {
+        width: 100%;
+        height: calc(70% - 10vh);
+        object-fit: cover;
+        transition: .5s;
+    }
+    
+    .box > span {
+        font-size: 16px;
+        color: black;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+    }
+    
+    /*.box:hover { flex: 1 1 10%; }
+    .box:hover > img {
+        width: 100%;
+        height: 100%;
+    }*/
+    .blocknextbit{
+        display: flex;
+        position: absolute;
+        top: 9%;
+        left: 18%;
+        width: 80%;
+        justify-content: right;
+    }
+    .blocknextbit img{
+        height: 80px;
+        margin-top: 5%;
+    }
+    .blockt1{
+        display: flex;
+        position: absolute;
+        top: 15%;
+        right: 18%;
+        width: 80%;
+        justify-content: left;
+    }
+    .blockt1 > img{
+        height: 80px;
+        margin: 3%;
+    }
+    .blockt2{
+        display: flex;
+        position: absolute;
+        top: 24%;
+        left: 8%;
+        width: 80%;
+        margin: 5% 10% ;
+        justify-content: right;
+    }
+    .blockt2  img{
+        height: 80px;
+        margin-top: 20%;
+    }
+    .blockt3{
+        display: flex;
+        position: absolute;
+        top: 37%;
+        right: 18%;
+        width: 80%;
+        justify-content: left;
+    }
+    .blockt3 > img{
+        height: 80px;
+        margin: 3%;
+    }
+    .blockt4{
+        display: flex;
+        position: absolute;
+        top: 50.25%;
+        left: 8%;
+        width: 80%;
+        margin: 5% 10% ;
+        justify-content: right;
+    }
+    .blockt4  img{
+        height: 80px;
+        margin-top: 20%;
+    }
+    .blockt5{
+        display: flex;
+        position: absolute;
+        top: 65%;
+        right: 18%;
+        width: 80%;
+        justify-content: left;
+    }
+    .blockt5 > img{
+        height: 80px;
+        margin: 3%;
+    }
+    .blockt6{
+        display: flex;
+        position: absolute;
+        top: 77%;
+        left: 8%;
+        width: 80%;
+        margin: 5% 10% ;
+        justify-content: right;
+    }
+    .blockt6  img{
+        height: 80px;
+        margin-top: 20%;
+    }
+    .frame{
+        display: inline-block;
+        border-radius: 25px;
+        border: 2px solid black;
+        padding: 4px;
+        width: fit-content;
+        height: 5%;
+        color: black;
+        font-size: 12px;
+        font-family: 'Mali', cursive;
+        text-align: center;
+    }
+    /*end about*/  
+    /*start article*/
+    .articleimg {
+        width: 100%;
+        margin-top: 15%;
+    } 
+      .container .btn {
+        position: absolute;
+        top: 70%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        padding: 2px 4px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        width: 25%;
+        height: 15%;
+      }
+      .btna{
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Mali', cursive;
+      }
+      .btna:hover{
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Mali', cursive;
+      }
+      .container .btn:hover {
+        background-color: black;
+      }
+    .all-article {
+        margin: 5% 0;
+        padding: 5px;
+        background-color: lightgray;
+    }
+    
+    .all-article > h1, .article {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .article {
+        display: block;
+        background: white;
+        text-align: center;
+    }
+    
+    .article > img {
+        float: none;
+        max-width: 60%;
+        height: auto;
+    }
+    .message{
+        display: block;
+        font-family: 'Mali', cursive;
+        text-align: left;
+    }
+    .message > p, a{
+        margin: 8px;
+        font-size: 16px;
+        font-family: 'Mali', cursive;
+    }
+    .message > h2{
+        margin: 8px;
+        font-size: 24px;
+    }
+    /*end article*/
 }

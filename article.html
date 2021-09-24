@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-    <!-- Start Navbar -->
+<!-- Start Navbar -->
+<header>
     <nav class="navbar navbar-expand-custom navbar-mainbg" id="navbar">
         <a class="navbar-brand navbar-logo" href="#">
             <img src="./imgs/logo_dino.png">
@@ -28,42 +29,44 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html"><i class="fas fa-home"></i>หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html"><i class="fa fa-users"></i>เกี่ยวกับพวกเรา</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./course.html"><i class="fa fa-graduation-cap"></i>คอร์สเรียน</a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-home"></i>หน้าหลัก</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-users"></i>เกี่ยวกับพวกเรา</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-graduation-cap"></i>คอร์สเรียน</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-cubes"></i>บทความ</a>
+                    <a class="nav-link" href="./article.html"><i class="fa fa-cubes"></i>บทความ</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- End Navbar -->
+</header>
+<!-- End Navbar -->
     <!--start article-->
     <div class="container">
+        <div class="container">
         <img class="articleimg" src="imgs/articlet-section-bg.png">
-        <button class="btn"><a href="https://drive.google.com/drive/folders/1iBbInCIsjjELqWIwNMECPhK34-pnvNkM?usp=sharing%22%3E">
-        ระบายสี</a></button>
+        <button class="btn"><a class="btna" href="https://drive.google.com/drive/folders/1iBbInCIsjjELqWIwNMECPhK34-pnvNkM?usp=sharing%22%3E">
+        ระบายสี</a></button></div>
         <article class="all-article">
-            <h1>บทความ</h1>
+            <h1><b>บทความ</b></h1>
             <article class="article">
                 <img src="./imgs/article1.jpg">
                 <div class="message">
                 <h2>How to share ScratchJr projects (and what if it does not work on Android) ?</h2>
                 <p>How to share ScratchJr projects? It is a common problem that the imported ScratchJr project does not show up. Fortunately, there is a simple workaround that usually helps!</p></div>
-                <a href="https://scratchjrfun.com/how-to-share-scratchjr-projects/" >READ MORE</a>
+                <a href="sub-article1.html" >READ MORE</a>
             </article>
             <article class="article">
                 <img src="./imgs/article2.jpg">
                 <div class="message">
-                <h2>Is it possible to use variables in ScratchJr?</h2>
-                <p>In this post you will learn how to work around the fact that there are no build-in variables in ScratchJr. We’ll create a counter that presents it’s “current value” and we’ll also simulate a conditional statement “If a variable value is x, then do something…”</p></div>
-                <a href="https://scratchjrfun.com/variables-in-scratchjr/" >READ MORE</a>
+                <h2>เป็นไปได้ไหมที่จะใช้ตัวแปรใน ScratchJr?</h2>
+                <p>ในโพสต์นี้ คุณจะได้เรียนรู้วิธีการแก้ปัญหาความจริงที่ว่า Scratchjr ไม่ได้มีตัวแปรในตัว เราจะสร้างเคาน์เตอร์ที่แสดงถึงค่าปัจจุบันของมัน และเราจะจำลองคำสั่งตามเงื่อนไขด้วย "ถ้าค่าตัวแปรคือ x ให้ทำบางอย่าง..." </p></div>
+                <a href="https://scratchjrfun.com/variables-in-scratchjr/" >อ่านต่อ..</a>
             </article>
             <article class="article">
                 <img src="./imgs/article3.jpg">
@@ -95,10 +98,10 @@
         <div class="footer-left">
             <h1><img src="./imgs/logo_dino.png"> <span>Next</span>bit</h1>
             <p class="footer-links">
-                <a href="#" class="link-1">หน้าหลัก</a>
-                <a href="#">เกี่ยวกับพวกเรา</a>
-                <a href="#">คอร์สเรียน</a>
-                <a href="#">บทความ</a>
+                <a href="./index.html" class="link-1">หน้าหลัก</a>
+                <a href="./about.html">เกี่ยวกับพวกเรา</a>
+                <a href="./course.html">คอร์สเรียน</a>
+                <a href="./article.html">บทความ</a>
             </p>
             <p class="footer-company-name">Nextbit.co © 2021</p>
         </div>
