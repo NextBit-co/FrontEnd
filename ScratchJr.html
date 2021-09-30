@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- css style -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cardcourse.css">
     <!-- css navbar -->
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
@@ -17,15 +18,15 @@
     <!-- font IBM-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&display=swap" rel="stylesheet">
     <!-- font MALI-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Start Navbar -->
-<header>
+    <!-- Start Navbar -->
+    <header>
     <nav class="navbar navbar-expand-custom navbar-mainbg" id="navbar">
         <a class="navbar-brand navbar-logo" href="#">
             <img src="./imgs/logo_dino.png">
@@ -52,30 +53,31 @@
             </ul>
         </div>
     </nav>
-</header>
-<!-- End Navbar -->
+    </header>
+    <!-- End Navbar -->
 
 
     <!-- Start Container -->
     <div class="container">
-        <section style="background-color: lightskyblue">
-            <div style="margin-top: 50px;margin-bottom: 50px">
-                <h1 style="font-family: 'IBM Plex Sans Thai', sans-serif;font-size: 54px;padding-top: 50px;text-align: center">คอร์ส Scratch jr</h1><br>
+        <section class="head-scratchjr">
+            <div class="subhead-scratchjr">
+                <h1>คอร์ส Scratch jr</h1><br>
                 <div class="row">
                     <div class="col-lg-6 align-self-left">
-                        <img style="height: 300px;padding-left: 40px" src="./imgs/Nextbit_Dino.png">
+                        <img class="image1" src="./imgs/Nextbit_Dino.png">
                     </div>
                     <div class="col-lg-6 align-self-right" style="margin-bottom: 50px">
-                        <img style="height: 300px;padding-left: 100px" src="./imgs/qr_code.png">
+                        <img class="image2" src="./imgs/qr_code.png">
                     </div>
                 </div>
             </div>
-
         </section>
         <section id="banner-section">
-            <div style="margin-top: 50px;">
-                <h1 style="font-family: 'IBM Plex Sans Thai', sans-serif;font-size: 54px;padding-top: 50px;text-align: center">รายละเอียดคอร์สเรียน</h1><br>
-                <p style="font-family: 'Mali', cursive;font-size: 24px;margin-bottom: 100px">หลักสูตรคอร์ส Scratch Jr. - Starter ทำให้น้องๆ สามารถเรียนเขียนโค้ดโดยการลากบล็อกคำสั่งต่างๆ จากที่ไหนก็ได้ ขอเพียงแค่มี iPad หรือ Androids<br><br>
+            <p align="center" class="responsive-iframe"><iframe class="iframe-responsive" src="https://www.youtube.com/embed/6uxg9snjpqg?autoplay=1&playlist=6uxg9snjpqg&loop=1&mute=1"></iframe></p>
+
+            <div class="paragraph">
+                <h1>รายละเอียดคอร์สเรียน</h1><br>
+                <p>หลักสูตรคอร์ส Scratch Jr. - Starter ทำให้น้องๆ สามารถเรียนเขียนโค้ดโดยการลากบล็อกคำสั่งต่างๆ จากที่ไหนก็ได้ ขอเพียงแค่มี iPad หรือ Androids<br><br>
 
                     แค่เพียง 20 นาที ต่อวันก็สามารถทำให้น้องๆ เขียนโค้ดเบื้องต้นเป็น
 
@@ -109,10 +111,10 @@
         <div class="footer-left">
             <h1><img src="./imgs/logo_dino.png"> <span>Next</span>bit</h1>
             <p class="footer-links">
-                <a href="./index.html" class="link-1">หน้าหลัก</a>
-                <a href="./about.html">เกี่ยวกับพวกเรา</a>
-                <a href="./course.html">คอร์สเรียน</a>
-                <a href="./article.html">บทความ</a>
+                <a href="#" class="link-1">หน้าหลัก</a>
+                <a href="#">เกี่ยวกับพวกเรา</a>
+                <a href="#">คอร์สเรียน</a>
+                <a href="#">บทความ</a>
             </p>
             <p class="footer-company-name">Nextbit.co © 2021</p>
         </div>

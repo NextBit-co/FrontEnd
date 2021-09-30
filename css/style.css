@@ -25,11 +25,6 @@ span {
 
 .container {
     /*background-color: #b1beff;*/
-    /*article*/
-    position: relative;
-    width: 100%;
-     max-width: 400px;
-     /*article*/
 }
 .banner {
     min-height: 600px;
@@ -290,7 +285,7 @@ span {
 } 
   .container .btn {
     position: absolute;
-    top: 62%;
+    top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -365,12 +360,16 @@ span {
     font-family: 'Kanit', sans-serif;
     color: #9433f0;
 }
-#banner-section p, h4{
+#banner-section h3{
     font-family: 'Mali', cursive;
     color: black;
+}
+#banner-section p{
+    font-family: 'Mali', cursive;
+    color:#555;
     font-size: 24px;
 }
-.col-lg-6 img{
+#banner-section img{
     width: 100%;
 }
 .imgsub{
@@ -599,30 +598,6 @@ span {
         font-size: 24px;
     }
     /*end article*/
-    /*start sub-article*/
-    .subsection{
-        background-color: lightgrey;
-        margin-top: 5%;
-        padding: 3%;
-        
-    }
-    .subsection h2{
-        font-family: 'Kanit', sans-serif;
-        color: #9433f0;
-    }
-    #banner-section p, h4{
-        font-family: 'Mali', cursive;
-        color: black;
-        font-size: 24px;
-    }
-    .col-lg-6 img{
-        width: 80%;
-    }
-    .imgsub{
-        width: 50%;
-        margin: auto auto;
-    }
-    /*end sub-article*/
 }
 @media(max-height: 768px) {
     /*start about*/
@@ -633,14 +608,14 @@ span {
         display: flex;
         width: 100%;
         box-sizing: border-box;
-        margin: 24% 0% 10%;
+        margin: 18% 0% 10%;
     }
     .introduceline {
         position: relative;
     }
     .container .introduceline > img{
         width: 100%;
-        height: 1080px;
+        height: 1480px;
     }
     .box {
         flex: 1;
@@ -682,7 +657,7 @@ span {
         justify-content: right;
     }
     .blocknextbit img{
-        height: 80px;
+        height: 90px;
         margin-top: 5%;
     }
     .blockt1{
@@ -694,7 +669,7 @@ span {
         justify-content: left;
     }
     .blockt1 > img{
-        height: 80px;
+        height: 90px;
         margin: 3%;
     }
     .blockt2{
@@ -707,7 +682,7 @@ span {
         justify-content: right;
     }
     .blockt2  img{
-        height: 80px;
+        height: 90px;
         margin-top: 20%;
     }
     .blockt3{
@@ -719,7 +694,7 @@ span {
         justify-content: left;
     }
     .blockt3 > img{
-        height: 80px;
+        height: 90px;
         margin: 3%;
     }
     .blockt4{
@@ -732,7 +707,7 @@ span {
         justify-content: right;
     }
     .blockt4  img{
-        height: 80px;
+        height: 90px;
         margin-top: 20%;
     }
     .blockt5{
@@ -744,7 +719,7 @@ span {
         justify-content: left;
     }
     .blockt5 > img{
-        height: 80px;
+        height: 90px;
         margin: 3%;
     }
     .blockt6{
@@ -757,18 +732,18 @@ span {
         justify-content: right;
     }
     .blockt6  img{
-        height: 80px;
+        height: 90px;
         margin-top: 20%;
     }
     .frame{
         display: inline-block;
         border-radius: 25px;
         border: 2px solid black;
-        padding: 4px;
+        padding: 6px;
         width: fit-content;
         height: 5%;
         color: black;
-        font-size: 12px;
+        font-size: 14px;
         font-family: 'Mali', cursive;
         text-align: center;
     }
@@ -780,7 +755,7 @@ span {
     } 
       .container .btn {
         position: absolute;
-        top: 70%;
+        top: 64%;
         left: 55%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -790,11 +765,11 @@ span {
         cursor: pointer;
         border-radius: 5px;
         text-align: center;
-        width: 25%;
-        height: 15%;
+        width: 15%;
+        height: 10%;
       }
       .btna{
-        font-size: 14px;
+        font-size: 18px;
         color: white;
         text-decoration: none;
         font-family: 'Mali', cursive;
