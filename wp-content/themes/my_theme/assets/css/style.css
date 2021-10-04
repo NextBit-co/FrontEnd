@@ -1,0 +1,447 @@
+/*** Mixins & Default Styles ***/
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Mali', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+i {
+    margin-right: 10px;
+}
+h1,h2,h3,h4,h5.h6 {
+    color: #9433f0;
+}
+span {
+    color: #ff6801;
+}
+.container {
+    background-color:#fbfbfb;
+}
+/*----------------------------
+---- start banner section ----
+-----------------------------*/
+.banner {
+    min-height: 620px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner .left{
+    position: relative;
+    font-family: 'Mali', cursive;
+}
+.banner .right{
+    position: relative;
+}
+.banner .left span{
+    font-weight: bolder;
+}
+.banner .left h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+.banner .left p{
+    color: #9433f0;
+    line-height: 1.52;
+    font-weight: 900;
+    font-family: 'Mali', cursive;
+}
+.banner .left img{
+    width: auto;
+    padding: 4%;
+}
+.banner .right img{
+    width: auto;
+}
+/*----------------------------
+---- end banner section ----
+-----------------------------*/
+/*----------------------------
+---- start objective section -
+-----------------------------*/
+.objective {
+    min-height: 420px;
+    width: auto;
+    margin-top: 12%;
+    font-family: 'Mali', cursive;
+}
+.objective h1,span{
+    font-weight: bolder;
+    margin: 3%;
+}
+.objective .left {
+    position: relative;
+    padding: 8%;
+}
+.objective .right {
+    position: relative;
+    padding-left: 10%;
+    padding-bottom: 4%;
+}
+.objective .left img,iframe{
+    width: 480px;
+    height: 300px;
+}
+.objective .left img {
+    position: absolute;
+    width: 500px;
+    height: 320px;
+    margin: -2%;
+}
+.object .left iframe{
+    position: relative;
+}
+/*----------------------------
+---- end objective section ---
+-----------------------------*/
+/*----------------------------
+---- start review section ---
+-----------------------------*/
+.review {
+    min-height: 280px;
+    border-radius: 12px;
+    background-color: #8FA1FF;
+    font-family: 'Mali', cursive;
+}
+.review span{
+    color: #8E5AFF;
+}
+.review h1,h2{
+    color: #ffffff;
+    text-align: center;
+}
+.review p{
+    color: #ffffff;
+    line-height: 1.52;
+    font-size: 26px;
+}
+.review img {
+    height: 120px;
+    width: 120px;
+}
+/*----------------------------
+---- end review section -----
+-----------------------------*/
+/*----------------------------
+---- start character section -
+-----------------------------*/
+.character {
+    min-height: 900px;
+    font-family: 'Mali', cursive;
+}
+/*----------------------------
+---- end character section ---
+-----------------------------*/
+.picture{
+    width: 100%;
+}
+.container2 {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 5% 0%;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+
+.box > img {
+    width: 100%;
+    height: calc(70% - 10vh);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box > span {
+    font-size: 3.8vh;
+    color: black;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 20%; }
+.box:hover > img {
+    width: 100%;
+    height: 100%;
+}
+.blocknextbit{
+    display: flex;
+    width: 80%;
+    margin: 5% 10% ;
+    justify-content: right;
+}
+.blockleft{
+    display: flex;
+    width: 80%;
+    margin: 5%;
+    justify-content: left;
+}
+.blockright{
+    display: flex;
+    width: 80%;
+    margin: 5% 10% ;
+    justify-content: right;
+}
+.frame{
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 40px;
+    margin: 3%;
+    width: fit-content;
+    height: 5%;
+    color: black;
+    font-size: 20px;
+    font-family: 'Mali', cursive;
+    text-align: center;
+}
+.blocknextbit img{
+    height: 200px;
+    margin-top: 5%;
+}
+.blockleft > img{
+    height: 200px;
+    margin: 3%;
+}
+.blockright  img{
+    height: 200px;
+    margin-top: 20%;
+}
+.articleimg {
+    width: 100%;
+    margin-top: 12%;
+}
+.btn {
+    text-align: center;
+    min-width:220px;;
+    font-weight: 600;
+    letter-spacing:1px;
+}
+.container .btn {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #555;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Mali', cursive;
+
+}
+.container .btn a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Mali', cursive;
+}
+.all-article {
+    margin: 5% 0;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.all-article > h1, .article {
+    margin: 10px;
+    padding: 20px;
+}
+
+.article {
+    display: block;
+    background: white;
+}
+
+.article > img {
+    float: left;
+    margin: 32px 24px 24px 0;
+    padding: 3.2px 0 0;
+    max-width: 30%;
+    height: auto;
+}
+.message{
+    display: block;
+    font-family: 'Mali', cursive;
+}
+.message > p, a{
+    margin: 8px;
+    font-size: 24px;
+}
+.message > h2{
+    margin: 8px;
+    font-size: 36px;
+}
+/*----------------------------
+---- start list-jigsaw section
+-----------------------------*/
+.list_jigsaw ul li {
+    list-style: none;
+    line-height: 1.52;
+    padding: 2%;
+    position: relative;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Mali', cursive;
+}
+.list_jigsaw ul li:before {
+    content: "";
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -48px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-image: url("../images/icon/icon_jigsaw.png");
+}
+.list_jigsaw a{
+    color: #ffffff;
+}
+/*----------------------------
+---- end list-jigsaw section
+-----------------------------*/
+    /*----------------------------
+    ---- start objective section -
+    -----------------------------*/
+    .objective h1,span{
+        font-size: 32px;
+    }
+    .objective .left img,iframe{
+        display: block;
+        height: 220px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .objective .left img {
+        position: absolute;
+        height: 220px;
+        width: auto;
+        margin-left: -3%;
+    }
+    .object .left iframe{
+        position: relative;
+    }
+    .objective .left {
+        position: relative;
+    }
+    .objective .right {
+        position: relative;
+        padding: 12px;
+    }
+    /*----------------------------
+    ---- end objective section ---
+    -----------------------------*/
+    /*----------------------------
+    ---- start list-jigsaw section ---
+    -----------------------------*/
+    .list_jigsaw ul li {
+        list-style: none;
+        line-height: 1.52;
+        left: 6%;
+        padding: 2%;
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Mali', cursive;
+    }
+    .list_jigsaw ul li:before {
+        content: "";
+        position: absolute;
+        margin-top: 0px;
+        margin-left: -38px;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+        background-image: url("../images/icon/icon_jigsaw.png");
+    }
+    .footer .list_jigsaw{
+        padding-left: 20%;
+        padding-bottom: 8%;
+    }
+    /*----------------------------
+    ---- end list-jigsaw section ---
+    -----------------------------*/
+    /*----------------------------
+    ---- start review section -
+    -----------------------------*/
+    .review {
+        min-height: 280px;
+    }
+    .review span{
+        font-size: 30px;
+    }
+    .review h1,h2{
+        font-size: 30px;
+    }
+    .review p{
+        padding: 4%;
+        font-size: 20px;
+    }
+    .review img {
+        height: 80px;
+        width:  80px;
+    }
+    /*----------------------------
+    ---- end review section -
+    -----------------------------*/
+    .picture{
+        width: 100%;
+    }
+    .blocknextbit{
+        display: flex;
+        width: 80%;
+        margin: 16% 12% 4%;
+        justify-content: right;
+    }
+    .blockleft{
+        display: flex;
+        width: 80%;
+        margin: 2%;
+        justify-content: left;
+    }
+    .blockright{
+        display: flex;
+        width: 80%;
+        margin: 4% 16%;
+        justify-content: right;
+    }
+    .frame{
+        display: inline-block;
+        border-radius: 25px;
+        border: 2px solid black;
+        padding: 10px;
+        width: fit-content;
+        height: 5%;
+        color: black;
+        font-size: 16px;
+        font-family: 'Mali', cursive;
+        text-align: center;
+    }
+    .blocknextbit img{
+        height: 100px;
+        margin: 2%;
+    }
+    .blockleft > img{
+        height: 100px;
+        margin: 2%;
+    }
+    .blockright  img{
+        height: 100px;
+        margin: 2%;
+    }
+
+}
