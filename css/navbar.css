@@ -1,29 +1,19 @@
 /*----------bootstrap-navbar-css------------*/
+.navbar-mainbg{
+	font-family: 'Mali', cursive;
+	background-color: #8E5AFF ;
+	padding: 0px;
+	z-index: 100;
+}
 .navbar-logo{
 	padding: 0px;
 	color: #fff;
-	font-family: 'Kanit', sans-serif;
 	font-size: 28px;
-	margin-left: 4%;
 }
 .navbar-logo img{
-	width: 58px;
-	height: 58px;
+	width: 60px;
+	height: 60px;
 	padding: 2px;
-}
-.navbar-mainbg{
-	background-color: #8E5AFF ;
-	padding: 0px;
-	z-index: 9;
-}
-.navbar .navbar-nav i {
-	/*background-color:  #ff6801;*/
-	/*width: 28px;*/
-	/*height: 28px;*/
-	/*text-align: center;*/
-	/*line-height: 26px;*/
-	/*vertical-align: middle;*/
-	/*border-radius: 50%;*/
 }
 #navbarSupportedContent{
 	overflow: hidden;
@@ -31,7 +21,6 @@
 }
 #navbarSupportedContent ul{
 	padding: 0px;
-	margin: 0px;
 }
 #navbarSupportedContent ul li a i{
 	margin-right: 10px;
@@ -43,8 +32,7 @@
 #navbarSupportedContent ul li a{
 	color: rgba(255,255,255,0.5);
     text-decoration: none;
-    font-size: 15px;
-	font-family: 'Kanit', sans-serif;
+    font-size: 16px;
     display: block;
     padding: 20px 20px;
     transition-duration:0.6s;
@@ -61,12 +49,11 @@
 	position: absolute;
 	right: 20px;
 	top: 10px;
-	font-size: 14px;
-	font-family: 'Kanit', sans-serif;
+	font-size: 16px;
 	display: inline-block;
 	padding-right: 3px;
 	vertical-align: middle;
-	font-weight: 900;
+	font-weight: 700;
 	transition: 0.5s;
 }
 #navbarSupportedContent .active>a:not(:only-child):after {
@@ -117,8 +104,10 @@
     left: -25px;
 }
 
-
 @media(min-width: 992px){
+	.navbar-logo{
+		margin-left: 24%;
+	}
 	.navbar-expand-custom {
 	    -ms-flex-flow: row nowrap;
 	    flex-flow: row nowrap;
@@ -138,38 +127,46 @@
 	    -ms-flex-preferred-size: auto;
 	    flex-basis: auto;
 	}
+	#navbarSupportedContent{
+		overflow: hidden;
+		position: relative;
+		margin-right: 24%;
+	}
 }
 
-
 @media (max-width: 991px){
+	#navbarSupportedContent{
+		overflow: hidden;
+		position: relative;
+	}
 	#navbarSupportedContent ul li a{
-		padding: 12px 30px;
+		padding: 16px 30px;
 	}
 	.hori-selector{
 		margin-top: 0px;
-		margin-left: 10px;
-		border-radius: 0;
-		border-top-left-radius: 25px;
-		border-bottom-left-radius: 25px;
+		border-radius: 30px;
 	}
-	.hori-selector .left,
-	.hori-selector .right{
-		right: 10px;
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1250px){
+	.navbar-logo{
+		padding: 0px;
+		color: #fff;
+		font-size: 28px;
+		margin-left: 8%;
 	}
-	.hori-selector .left{
-		top: -25px;
-		left: auto;
+	#navbarSupportedContent{
+		margin-right: 2%;
 	}
-	.hori-selector .right{
-		bottom: -25px;
+}
+@media screen and (min-device-width: 1251px) and (max-device-width: 1550px){
+	.navbar-logo{
+		padding: 0px;
+		color: #fff;
+		font-size: 28px;
+		margin-left: 16%;
 	}
-	.hori-selector .left:before{
-		left: -25px;
-		top: -25px;
-	}
-	.hori-selector .right:before{
-		bottom: -25px;
-		left: -25px;
+	#navbarSupportedContent{
+		margin-right: 20%;
 	}
 }
 /*----------Sticky navbar add------------*/

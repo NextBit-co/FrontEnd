@@ -1,8 +1,0 @@
-try{
-s_a("DFfvp");
-var s_o0g=function(a){s_k.call(this,a.Ja)};s_n(s_o0g,s_k);s_o0g.Fa=s_k.Fa;s_o0g.prototype.Lob=function(a){a.actionElement.parent().setStyle("background-color","")};s_H(s_o0g.prototype,"K1e2pe",function(){return this.Lob});s_J(s_qza,s_o0g);
-
-s_b();
-
-}catch(e){_DumpException(e)}
-// Google Inc.
