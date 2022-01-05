@@ -1,30 +1,19 @@
-body{
-	font-family: 'Itim', cursive;
-}
-* {
-	margin: 0;
-	padding: 0;
-}
-i {
-	margin-right: 10px;
-}
-.logo-img-navbar{
-	height: 64px;
-	width: 64px;
-	margin-top: -12px;
-	margin-right: 8px;
-}
-/*----------multi-level-accordian-menu------------*/
-.navbar-logo{
-	/*--add :value = logo-img-navbar--*/
-	height: 64px;
-	/*--------------*/
-	padding: 15px;
-	color: #fff;
-}
+/*----------bootstrap-navbar-css------------*/
 .navbar-mainbg{
-	background-color: #5161ce;
+	font-family: 'Mali', cursive;
+	background-color: #8E5AFF ;
 	padding: 0px;
+	z-index: 100;
+}
+.navbar-logo{
+	padding: 0px;
+	color: #fff;
+	font-size: 28px;
+}
+.navbar-logo img{
+	width: 60px;
+	height: 60px;
+	padding: 2px;
 }
 #navbarSupportedContent{
 	overflow: hidden;
@@ -32,7 +21,6 @@ i {
 }
 #navbarSupportedContent ul{
 	padding: 0px;
-	margin: 0px;
 }
 #navbarSupportedContent ul li a i{
 	margin-right: 10px;
@@ -50,10 +38,9 @@ i {
     transition-duration:0.6s;
 	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     position: relative;
-	margin-top: 8px;
 }
 #navbarSupportedContent>ul>li.active>a{
-	color: #5161ce;
+	color: #8E5AFF;
 	background-color: transparent;
 	transition: all 0.7s;
 }
@@ -63,11 +50,10 @@ i {
 	right: 20px;
 	top: 10px;
 	font-size: 16px;
-	font-family: "Font Awesome 5 Free";
 	display: inline-block;
 	padding-right: 3px;
 	vertical-align: middle;
-	font-weight: 900;
+	font-weight: 700;
 	transition: 0.5s;
 }
 #navbarSupportedContent .active>a:not(:only-child):after {
@@ -107,7 +93,7 @@ i {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #5161ce;
+    background-color: #8E5AFF;
 }
 .hori-selector .right:before{
 	bottom: 0;
@@ -118,8 +104,10 @@ i {
     left: -25px;
 }
 
-
 @media(min-width: 992px){
+	.navbar-logo{
+		margin-left: 24%;
+	}
 	.navbar-expand-custom {
 	    -ms-flex-flow: row nowrap;
 	    flex-flow: row nowrap;
@@ -139,37 +127,52 @@ i {
 	    -ms-flex-preferred-size: auto;
 	    flex-basis: auto;
 	}
+	#navbarSupportedContent{
+		overflow: hidden;
+		position: relative;
+		margin-right: 24%;
+	}
 }
 
-
 @media (max-width: 991px){
+	#navbarSupportedContent{
+		overflow: hidden;
+		position: relative;
+	}
 	#navbarSupportedContent ul li a{
-		padding: 12px 30px;
+		padding: 16px 30px;
 	}
 	.hori-selector{
 		margin-top: 0px;
-		margin-left: 10px;
-		border-radius: 0;
-		border-top-left-radius: 25px;
-		border-bottom-left-radius: 25px;
-	}
-	.hori-selector .left,
-	.hori-selector .right{
-		right: 10px;
-	}
-	.hori-selector .left{
-		top: -25px;
-		left: auto;
-	}
-	.hori-selector .right{
-		bottom: -25px;
-	}
-	.hori-selector .left:before{
-		left: -25px;
-		top: -25px;
-	}
-	.hori-selector .right:before{
-		bottom: -25px;
-		left: -25px;
+		border-radius: 30px;
 	}
 }
+@media screen and (min-device-width: 768px) and (max-device-width: 1250px){
+	.navbar-logo{
+		padding: 0px;
+		color: #fff;
+		font-size: 28px;
+		margin-left: 8%;
+	}
+	#navbarSupportedContent{
+		margin-right: 2%;
+	}
+}
+@media screen and (min-device-width: 1251px) and (max-device-width: 1550px){
+	.navbar-logo{
+		padding: 0px;
+		color: #fff;
+		font-size: 28px;
+		margin-left: 16%;
+	}
+	#navbarSupportedContent{
+		margin-right: 20%;
+	}
+}
+/*----------Sticky navbar add------------*/
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+/*---------------------------------------*/

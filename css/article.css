@@ -1,0 +1,83 @@
+/*----------------------------
+---- start article ---
+-----------------------------*/
+.blocknextbit img{
+    height: 200px;
+    margin-top: 5%;
+}
+.blockleft > img{
+    height: 200px;
+    margin: 3%;
+}
+.blockright  img{
+    height: 200px;
+    margin-top: 20%;
+}
+.articleimg {
+    width: 100%;
+    margin-top: 12%;
+}
+.btn {
+    text-align: center;
+    min-width:220px;;
+    font-weight: 600;
+    letter-spacing:1px;
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #555;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Mali', cursive;
+
+}
+.container .btn a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Mali', cursive;
+}
+.all-article {
+    margin: 5% 0;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.all-article > h1, .article {
+    margin: 10px;
+    padding: 20px;
+    font-family: 'Mali', cursive;
+}
+
+.article {
+    display: block;
+    background: white;
+}
+
+.article > img {
+    float: left;
+    margin: 32px 24px 24px 0;
+    padding: 3.2px 0 0;
+    max-width: 30%;
+    height: auto;
+}
+.message{
+    display: block;
+    font-family: 'Mali', cursive;
+}
+.message > p, a{
+    margin: 8px;
+    font-size: 24px;
+}
+.message > h2{
+    margin: 8px;
+    font-size: 36px;
+    color: black;
+}
+/*----------------------------
+---- end article ---
+-----------------------------*/

@@ -1,0 +1,289 @@
+/*----------------------------
+---- start banner section ----
+-----------------------------*/
+.banner {
+    min-height: 620px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner .left{
+    position: relative;
+    font-family: 'Mali', cursive;
+}
+.banner .right{
+    position: relative;
+}
+.banner .left span{
+    font-weight: bolder;
+}
+.banner .left h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+.banner .left p{
+    color: #9433f0;
+    line-height: 1.52;
+    font-weight: 900;
+    font-family: 'Mali', cursive;
+}
+.banner .left img{
+    width: auto;
+    padding: 4%;
+}
+.banner .right img{
+    width: auto;
+}
+/*----------------------------
+---- end banner section ----
+-----------------------------*/
+/*----------------------------
+---- start objective section -
+-----------------------------*/
+.objective {
+    min-height: 540px;
+    width: auto;
+    margin: 12% 0% 4% 0%;
+    font-family: 'Mali', cursive;
+}
+.objective .background-video {
+    position: relative;
+    margin: 0 auto;
+    width: 410px;
+    height: 270px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../imgs/png/border_video.png");
+}
+.objective .background-video video{
+    width: 82%;
+    height: 82%;
+    position: relative;
+    top: 9%;
+    bottom: 0;
+    left: 9%;
+    right: 0;
+    margin: auto;
+    border: none;
+}
+.objective h1,span{
+    font-weight: bolder;
+}
+.objective h1{
+    margin-bottom: 4%;
+}
+.objective .left img {
+    z-index: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 440px;
+    height: 280px;
+}
+/*----------------------------
+---- end objective section ---
+-----------------------------*/
+/*----------------------------
+---- start review section ---
+-----------------------------*/
+.review {
+    min-height: 280px;
+    border-radius: 12px;
+    background-color: #8FA1FF;
+    font-family: 'Mali', cursive;
+}
+.review span{
+    color: #8E5AFF;
+}
+.review h1,h2{
+    color: #ffffff;
+    text-align: center;
+}
+.review p{
+    color: #ffffff;
+    line-height: 1.52;
+    font-size: 26px;
+}
+.review img {
+    height: 120px;
+    width: 120px;
+}
+/*----------------------------
+---- end review section -----
+-----------------------------*/
+
+/*----------------------------
+---- start character section -
+-----------------------------*/
+.character {
+    min-height: 900px;
+    font-family: 'Mali', cursive;
+}
+/*----------------------------
+---- end character section ---
+-----------------------------*/
+
+@media(min-width: 992px) {
+    /*----------------------------
+    ---- start banner section ----
+    -----------------------------*/
+    .banner {
+        padding-top: 14%;
+        background-image: url("../imgs/png/banner1.png");
+    }
+
+    .banner .left {
+        padding-left: 2%;
+    }
+
+    .banner .left p {
+        padding: 3%;
+        font-size: 24px;
+    }
+
+    .banner .left img {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        margin-top: -40%;
+        height: 380px;
+    }
+
+    .banner .right img {
+        height: 520px;
+        margin-left: -24%;
+    }
+    /*----------------------------
+    ---- end banner section -----
+    -----------------------------*/
+    /*----------------------------
+    ---- start objective section -
+    -----------------------------*/
+    .objective .background-video {
+        position: relative;
+        top: 16%;
+        margin: 0 auto;
+        width: 410px;
+        height: 270px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../imgs/png/border_video.png");
+    }
+    /*----------------------------
+    ---- end objective section -
+    -----------------------------*/
+}
+@media(max-width: 991px) {
+    /*----------------------------
+    ---- start banner section ----
+    -----------------------------*/
+    .banner {
+        padding-top: 16%;
+        background-image: url("../imgs/png/banner2.png");
+    }
+
+    .banner .left {
+        padding-top: 12%;
+    }
+
+    .banner .left p {
+        padding: 8%;
+        font-size: 20px;
+    }
+
+    .banner .left img {
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .banner .right img {
+        height: 360px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*----------------------------
+    ---- end banner section ------
+    -----------------------------*/
+    /*----------------------------
+    ---- start objective section -
+    -----------------------------*/
+    .objective h1, span {
+        margin-top: 8%;
+        font-size: 32px;
+    }
+    .objective .background-video {
+        width: 300px;
+        height: 200px;
+    }
+    .objective .left {
+        position: relative;
+    }
+
+    /*----------------------------
+    ---- end objective section ---
+    -----------------------------*/
+    /*----------------------------
+     ---- start review section -
+     -----------------------------*/
+    .review {
+        min-height: 280px;
+    }
+
+    .review span {
+        font-size: 30px;
+    }
+
+    .review h1, h2 {
+        font-size: 30px;
+    }
+
+    .review p {
+        padding: 4%;
+        font-size: 20px;
+    }
+
+    .review img {
+        height: 80px;
+        width: 80px;
+    }
+
+    /*----------------------------
+    ---- end review section -
+    -----------------------------*/
+}
+@media (max-device-width: 400px){
+    /*----------------------------
+      ---- start banner section ----
+      -----------------------------*/
+    .banner .left img {
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .banner .right img {
+        height: 280px;
+        display: block;
+        margin: 0 auto;
+    }
+    /*----------------------------
+    ---- end banner section ------
+    -----------------------------*/
+    /*----------------------------
+    ---- start objective section -
+    -----------------------------*/
+    .objective h1, span {
+        margin-top: 8%;
+        font-size: 28px;
+    }
+    .objective .background-video {
+        width: 240px;
+        height: 160px;
+    }
+    /*---------------------------
+    ---- end objective section ---
+    -----------------------------*/
+}

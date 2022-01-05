@@ -1,118 +1,199 @@
-/* By ©2019 Not Really
-   url:(https://codepen.io/z-)
-*/
-body {
-    /*display: grid;*/
-    /*grid-template-rows: 1fr auto;*/
-    /*grid-template-areas: "main" "footer";*/
-    overflow-x: hidden;
-    /*background: #F5F7FA;*/
-    /*min-height: 100vh;*/
-}
-body .footer {
-    z-index: 1;
-    --footer-background:#ED5565;
-    display: grid;
-    position: relative;
-    grid-area: footer;
-    min-height: 12rem;
-    border-radius: 12px;
-}
-body .footer .bubbles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1rem;
-    background: var(--footer-background);
-    filter: url("#blob");
-}
-body .footer .bubbles .bubble {
-    position: absolute;
-    left: var(--position, 50%);
-    background: var(--footer-background);
-    border-radius: 100%;
-    -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
-    animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
-    transform: translate(-50%, 100%);
-}
-body .footer .content {
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 4rem;
-    padding: 2rem;
-    background: var(--footer-background);
-}
-body .footer .content a, body .footer .content p {
-    color: #F5F7FA;
-    text-decoration: none;
-}
-body .footer .content b {
-    color: white;
-}
-body .footer .content p {
-    margin: 0;
-    font-size: 0.75rem;
-}
-body .footer .content h3 {
-    color: white;
-    margin: 0;
-}
-body .footer .content > div {
+footer {
+    width: auto;
+    height: auto;
     display: flex;
-    flex-direction: column;
+    position: relative;
+    font-family: 'Mali', cursive;
+    z-index: 12;
+    color: #ffffff;
+    --footer-background:#8E5AFF;
+    background-color: var(--footer-background);
+    justify-content: space-around;
+}
+footer h1,
+footer h2,
+footer h3 {
+    color: #ffffff;
+}
+footer p{
+    line-height: 2;
+    font-size:24px;
+}
+footer i{
+    text-align:center;
+    line-height: 2;
+    padding: 8px 0;
+    height:42px;
+    width: 42px;
+    color: #ffffff;
+    border: 1px solid;
+    border-radius: 2rem;
+    background-color: #ff6801;
+}
+footer .footer-icons i{
+    border-radius: 1rem;
+    font-size: 24px;
+}
+footer .footer-icons .fa-facebook{background-color: #1877f2}
+footer .footer-icons .fa-youtube-play{background-color: #ff0000}
+
+footer img{
+    height: auto;
+    width: 100%;
+    max-width: 20rem;
+}
+footer .footer-main{
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: auto;
+    margin: 2rem;
+}
+footer .footer-logo{
+    display: block;
     justify-content: center;
+    text-align: center;
+    margin: 2rem;
 }
-body .footer .content > div > div {
-    margin: 0.25rem 0;
+footer .footer-link{
+    text-align: left;
+    margin: 2rem;
 }
-body .footer .content > div > div > * {
-    margin-right: 0.5rem;
+footer .footer-contact{
+    margin: 2rem;
 }
-body .footer .content > div .image {
-    align-self: center;
-    width: 4rem;
-    height: 4rem;
-    margin: 0.25rem 0;
-    background-size: cover;
-    background-position: center;
+footer .footer-qrcode{
+    margin: 2rem;
 }
 
-@-webkit-keyframes bubble-size {
-    0%, 75% {
-        width: var(--size, 4rem);
-        height: var(--size, 4rem);
+
+@media (min-width: 992px) {
+    footer .footer-logo{
+        justify-content: center;
+        margin: 4rem auto;
     }
-    100% {
-        width: 0rem;
-        height: 0rem;
+    footer .footer-link{
+        margin: 4rem;
+    }
+    footer .footer-contact{
+        margin: 4rem auto;
+    }
+    footer .footer-qrcode{
+        margin: 4rem auto;
+    }
+}
+@media (max-width: 991px) {
+    footer{
+        justify-content: space-around;
+    }
+    footer .footer-logo{
+        margin: 2rem auto;
+        
+    }
+    footer .footer-link{
+        margin: 2rem;
+    }
+    footer .footer-contact{
+        margin: 2rem auto;
+        
+    }
+    footer .footer-qrcode{
+        margin: 2rem auto;
+    }
+
+}
+@media (max-width: 880px) {
+
+    footer .footer-logo{
+        margin: 2rem auto;
+        
+    }
+    footer .footer-link{
+        margin: 2rem;
+        margin-top: 5rem;;
+        margin-right: 7rem;
+    }
+    footer .footer-contact{
+        margin: 2rem auto;
+        margin-left: 6rem;
+    }
+    footer .footer-qrcode{
+        margin: 2rem auto;
+    }
+
+}
+@media (max-width: 768px) {
+
+    footer .footer-logo{
+        margin: 2rem auto; 
+    }
+    footer .footer-link{
+        margin: 2rem;
+        margin-top: 5rem;;
+        margin-right: 6rem;
+    }
+    footer .footer-contact{
+        margin: 2rem auto;
+        margin-left: 3rem;
+    }
+    footer .footer-qrcode{
+        margin: 2rem auto;
+    }
+
+}
+@media (max-width: 715px) {
+    footer p{
+        font-size: 20px;
+    }
+    footer .footer-link{
+        margin: 2rem;
+        margin-top: 5rem;;
+        margin-left: 5rem;
+    }
+    footer .footer-contact{
+        margin: 2rem auto;
+        margin-left: 3rem;
     }
 }
 
-@keyframes bubble-size {
-    0%, 75% {
-        width: var(--size, 4rem);
-        height: var(--size, 4rem);
+@media (max-width: 560px) {
+    footer .footer-link{
+        margin: 2rem;
+        margin-top: 5rem;
+        margin-left: 4rem;
     }
-    100% {
-        width: 0rem;
-        height: 0rem;
-    }
-}
-@-webkit-keyframes bubble-move {
-    0% {
-        bottom: -4rem;
-    }
-    100% {
-        bottom: var(--distance, 10rem);
+    footer .footer-contact{
+        margin: 2rem auto;
+        margin-left: 5rem;
     }
 }
-@keyframes bubble-move {
-    0% {
-        bottom: -4rem;
+@media (max-width: 375px) {
+    footer .fa{
+        font-size: 24px;
     }
-    100% {
-        bottom: var(--distance, 10rem);
+    footer p{
+        font-size: 18px;
+    }
+    footer .footer-link{
+        margin: 2rem;
+        margin-top: 5rem;;
+        margin-left: 3rem;
+    }
+    footer .footer-contact{
+        margin: 2rem auto;
+        margin-right: 1rem;
+    }
+}
+@media (max-width: 280px) {
+    footer .fa{
+        font-size: 20px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    footer .footer-link{
+        margin: 2rem;
+        margin-top: 5rem;;
+        margin-left: 0rem;
     }
 }
