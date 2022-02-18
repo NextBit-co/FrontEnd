@@ -54,7 +54,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.4em;
     padding: 0.3em 0 0 0.3em;
     border-radius: calc(var(--curve) * 1px) 0 0 0;
     background-color: var(--surface-color);
@@ -193,6 +193,7 @@
     font-size: 24px;
     margin-bottom: 100px;
 }
+
 /*end scratchjr*/
 @media screen and (max-width: 1199px){
     .head-dino{

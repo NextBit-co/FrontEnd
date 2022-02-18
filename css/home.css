@@ -215,8 +215,8 @@
         font-size: 32px;
     }
     .objective .background-video {
-        width: 300px;
-        height: 200px;
+        width: 560px;
+        height: 370px;
     }
     .objective .left {
         position: relative;
@@ -254,6 +254,27 @@
     ---- end review section -
     -----------------------------*/
 }
+@media(max-width: 540px) {
+ /*----------------------------
+    ---- start objective section -
+    -----------------------------*/
+    .objective h1, span {
+        margin-top: 8%;
+        font-size: 32px;
+    }
+    .objective .background-video {
+        width: 500px;
+        height: 330px;
+    }
+    .objective .left {
+        position: relative;
+    }
+
+    /*----------------------------
+    ---- end objective section ---
+    -----------------------------*/
+}
+
 @media (max-device-width: 400px){
     /*----------------------------
       ---- start banner section ----
